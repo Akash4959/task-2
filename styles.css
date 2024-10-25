@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('iiiii.jpg');
+    margin: 0;
+    padding: 0;
+    background-color: #ec4444;
+}
+
+header {
+    background-color: #43c03a;
+    color: rgb(126, 230, 79);
+    padding: 25px 0;
+    border-radius: 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.product-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.product-gallery {
+    flex: 1;
+}
+
+.product-gallery img {
+    width: 50%;
+    max-width: 300px;
+    border-radius: 90px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.thumbnails img {
+    width: 180px;
+    cursor: pointer;
+    border-radius: 55px;
+}
+
+.product-details {
+    flex: 1;
+    background-color: #6f1ed2;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.product-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin-bottom: 40px;
+}
+
+.variants {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now {
+    background-color: #4caf50;
+    color: white;
+}
+
+.add-to-cart {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.reviews {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #d53e4d;
+    border-radius: 10px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review .rating {
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-details {
+        margin-top: 20px;
+    }
+}
